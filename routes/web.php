@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $links = config('store.someLinks');
-    return view('welcome', compact('links'));
-});
+Route::get('/', [PageController::class, 'index']);
