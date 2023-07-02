@@ -5,7 +5,7 @@
     <h1>Welcome Page</h1>
     <div class="row g-4">
         <div class="col">
-            @foreach ($trains as $train) 
+            {{-- @foreach ($trains as $train) 
             <div class="card p-3 mb-3">
                 <h5>{{ $train->company }}</h5>
                 <h3>{{ $train->departure_station }} - {{ $train->arrival_station }}</h3>
@@ -30,7 +30,7 @@
                     }
                 @endphp
             </div>
-            @endforeach
+            @endforeach --}}
         </div>
     </div>
 
